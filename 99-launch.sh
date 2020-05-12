@@ -8,6 +8,7 @@ DATADIR=${OVERRIDE_DATADIR:-$DATADIR}
 echo using datadir of $DATADIR
 echo DATADIR CONFIG IS
 cat $DATADIR/configs/znc.conf
+ls -laR $DATADIR/configs
 
 #run the ZNC app
 /opt/znc/bin/znc --foreground --datadir "$DATADIR" "$@"
